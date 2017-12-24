@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<!--
+        Miniport by HTML5 UP
+        html5up.net | @ajlkn
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Miniport by HTML5 UP</title>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <!--[if lte IE 8]><script src='assets/js/ie/html5shiv.js'></script><![endif]-->
+        <link rel='stylesheet' href='assets/css/main.css' />
+        <!--[if lte IE 8]><link rel='stylesheet' href='assets/css/ie8.css' /><![endif]-->
+        <!--[if lte IE 9]><link rel='stylesheet' href='assets/css/ie9.css' /><![endif]-->
+    </head>
+    <body style='background-color: #000;'>
+        <!-- Nav -->
+        <nav id='nav'>
+            <ul class='container'>
+                <li><a href='http://japananimetime.ddns.net/Application/login.jsp'>Войти</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact -->
+        <div class='wrapper style3'>
+            <article id='contact' class='container 75%'>
+                <header>
+                    <h2>Предпросмотр</h2>
+                    <p>Проверьте введённые данные</p>
+                </header>
+                    <div class='row'>
+                        <div class='6u 12u(mobile)'>
+                            <br>
+                        </div>
+                        <div class='6u 12u(mobile)' style='text-align: justify;'>											
+                            Ректору АО « МУИТ»<br>
+                            д.э.н., профессору Шыныбекову Д.А.<br>
+                            от студента " + course + " курса,<br>
+                            дневного отделения  специальности <br>
+                            " + faculty + "<br>
+                            группы " + group + "  <br>
+                            " + surname + " " + name + " " + fathername + "<br>
+                            Контактные тел.:" + phone + "<br>
+
+                        </div>
+                    </div>
+					if (type.equals("1")) {
+						<div class='row'>
+							<div class='12u'>
+								ЗАЯВЛЕНИЕ<br>
+								<br>
+								Прошу Вас дать допуск к учебным занятиям и сдаче академической разницы по специальности  " + faculty + " " + course + " курса дневного отделения.
+							</div>
+						</div>
+					}else if (type.equals("2")){
+						<div class='row'>
+							<div class='12u'>
+								ЗАЯВЛЕНИЕ<br>
+								<br>
+								Прошу Вас зачислить меня в число студентов " + course + " курса дневного отделения по специальности " + faculty + ".<br><br>
+							</div>
+						</div>
+					
+					} else if (type.equals("3")) {
+						<div class='row'>
+							<div class='12u'>
+								ЗАЯВЛЕНИЕ<br>
+								<br>
+								Прошу Вас зачислить меня в число студентов " + course + " курса заочного отделения по специальности " + faculty + ".
+                			</div>
+                		</div>
+					
+					} else if (type.equals("4")) {
+						<div class='row'>
+                			<div class='12u'>
+                			ЗАЯВЛЕНИЕ<br>
+							<br>
+							Прошу Вас восстановить меня в число студентов " + course + " курса дневного отделения по специальности " + faculty + ".
+							</div>
+						</div>
+					
+					} else if (type.equals("5")) {
+						<div class='row'>
+							<div class='12u'>
+								ЗАЯВЛЕНИЕ<br>
+								<br>
+								Прошу Вас восстановить меня в число студентов " + course + " курса заочного отделения по специальности " + faculty + ".
+							</div>
+						</div>
+					} else if (type.equals("6")) {
+						<div class='row'>
+							<div class='12u'>
+								ЗАЯВЛЕНИЕ<br>
+								<br>
+								Прошу Вас отчислить меня из числа студентов " + course + " курса дневного отделения по специальности " + faculty + " " + reason + ".
+							</div>
+						</div>
+					} else if (type.equals("7")) {
+						<div class='row'>
+							<div class='12u'>
+								ЗАЯВЛЕНИЕ<br>
+								<br>
+								Прошу Вас отчислить меня из числа студентов " + course + " курса заочного отделения по специальности " + faculty + " " + reason + ".
+							</div>
+						</div>
+					} else if (type.equals("8")) {
+						<div class='row'>
+							<div class='12u'>
+								ЗАЯВЛЕНИЕ<br>
+								<br>
+								Прошу Вас оставить меня на повторный год обучения по специальности " + faculty + "  дневного отделения  в " + yearadd + " учебном году, в связи с " + reason + ".
+							</div>
+						</div>
+					} else if (type.equals("9")) {
+						<div class='row'>
+							<div class='12u'>
+								ЗАЯВЛЕНИЕ<br>
+								<br>
+								Прошу Вас оставить меня на повторный " + course + " курс обучения  в " + yearadd + " учебном году  по специльности " + faculty + " заочного отделения  в связи  в " + yearadd + " учебном году, в связи с " + reason + " на платной основе.
+							</div>
+						</div>
+					}
+                    <div class="row 200%"><div class="12u">                
+                            <form method='post' action='http://japananimetime.ddns.net/Application/ApplicationSend'> 
+                                <input type='hidden' value='" + name + "' name='name'>
+                                <input type='hidden' value='" + surname + "' name='surname'>
+                                <input type='hidden' value='" + fathername + "' name='fathername'>
+                                <input type='hidden' value='" + phone + "' name='phone'>
+                                <input type='hidden' value='" + faculty + "' name='faculty'>
+                                <input type='hidden' value='" + course + "' name='course'>
+                                <input type='hidden' value='" + group + "' name='group'>
+                                <input type='hidden' value='" + type + "' name='type'>
+                                <input type='hidden' value='" + day + "' name='day'>
+                                <input type='hidden' value='" + month + "' name='month'>
+                                <input type='hidden' value='" + year + "' name='year'>
+                                <input type='hidden' value='" + yearadd + "' name='year'>                                
+                                <input type='hidden' value='" + reason + "' name='year'>
+                                <ul class='actions'> 
+                                    <li><input type='submit' value='Отправить' /></li> 
+                                    <li><input type='reset' value='Очистить' class='alt' /></li> 
+                                </ul>
+                            </form> 
+                        </div>
+					</div>
+			</article>
+		</div>			
+		<footer id='footer' style='margin-top: 0px;'>
+			<ul style='margin-bottom: 0px;'>
+				<li>&copy; Untitled. All rights reserved.</li>
+				<li>Design: <a href='http://html5up.net'>HTML5 UP</a></li>
+			</ul>
+		</footer>
+		<!-- Scripts -->
+		<script src='assets/js/jquery.min.js'></script>
+		<script src='assets/js/jquery.scrolly.min.js'></script>
+		<script src='assets/js/skel.min.js'></script>
+		<script src='assets/js/skel-viewport.min.js'></script>
+		<script src='assets/js/util.js'></script>
+		<!--[if lte IE 8]><script src='assets/js/ie/respond.min.js'></script><![endif]-->
+		<script src='assets/js/main.js'></script>
+    </body>
+</html>

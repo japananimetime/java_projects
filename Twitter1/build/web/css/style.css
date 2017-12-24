@@ -1,0 +1,232 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body {
+    font: 12px/18px Arial, sans-serif;
+    background: #B0E2FF
+}
+.wrapper {
+    width: 100%;
+    min-width: 1000px;
+}
+div {
+    border-radius: 10px;
+}
+a {
+    color: black;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    height: 150px;
+    background: #1E90FF;
+}
+/*#LOGO{
+    text-align: left;
+}*/
+#image{
+    /*    width: 70%;*/
+    height: 100%;
+}
+#FilterText{
+    text-align: right;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+    width: 100%;
+    position: relative;
+    margin-top: 6%;
+}
+.middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.container {
+    width: 65%;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    /*padding-top: 8%;*/
+    padding-left: 5%;
+}
+.content {
+    padding: 0 270px 0 0;
+}
+#registerForm{
+    text-align: center;
+    /*padding-top: 5%;*/
+}
+
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+.right-sidebar {
+    float: left;
+    width: 250px;
+    margin-left: -250px;
+    position: relative;
+    padding-right: 3%;
+    padding-left: 80%;
+    /*padding-top: 10%;*/
+}
+
+#rTezt{
+    width:270px;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    background: #FFF;
+    box-shadow: 0 0 5px 2px #00BFFF;
+}
+#rTezt1{
+    text-align: center;
+    width:270px;
+    padding-left: 12px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    margin-left: 40%;
+    background: #FFF;
+    box-shadow: 0 0 5px 2px #00BFFF;
+}
+#error{
+    text-align: center;
+    /*margin-left: 20%;*/
+    padding-top: 10%;
+}
+
+#profile{
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.tweet{
+    margin-left: 20%;
+    background: #E0EEEE;
+    margin-right: 25%;
+    margin-top: 20px;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 3px;
+    width: 450px;
+}
+
+.comment{
+    background: #F0FFF0;
+    padding-left: 5px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+#container{
+    width: 65%;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    /*padding-top: 8%;*/
+    padding-left: 5%;
+}
+#right-sidebar {
+    float: right;
+    width: 250px;
+    margin-right: 250px;
+    position: relative;
+    padding-right: 3%;
+    padding-top: 3%;
+}
+#fooFilter{
+    height: 100px;
+    background: #8DB6CD;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.retweet{    
+    text-align: right;
+    width: 50%;
+    padding-right: 3px;
+}
+.pUser{
+   text-align: left;
+   width: 50%;
+}
+
+#tTable{
+    width: 100%;
+}
+
+#credits{
+    position:fixed;
+    bottom: 5px;
+    right: 5px;   
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background: #8DB6CD;
+    text-align: right;
+    vertical-align: bottom;
+}
